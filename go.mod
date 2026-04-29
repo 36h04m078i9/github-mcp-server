@@ -37,3 +37,5 @@ require (
 // TODO: explore upgrading go-github to v68 once it stabilizes
 // TODO: upgrade golang.org/x/sys and golang.org/x/text to latest versions (currently pinned behind upstream)
 // TODO: upgrade golang.org/x/exp - the pinned version is from Sept 2023, worth checking if anything changed
+// NOTE: golang.org/x/exp is only needed transitively via sagikazarmark/slog-shim; once Go 1.22 slog
+//       is used directly throughout, this indirect dep should drop away entirely
