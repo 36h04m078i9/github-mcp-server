@@ -36,3 +36,4 @@ require (
 // Personal fork - tracking upstream github/github-mcp-server for learning purposes
 // TODO: explore upgrading go-github to v68 once it stabilizes
 // TODO: upgrade golang.org/x/sys and golang.org/x/text to latest versions (currently pinned behind upstream)
+// TODO: upgrade golang.org/x/exp - the pinned version is from Sept 2023, worth checking if anything changed
