@@ -53,9 +53,9 @@ func rootCmd() *cobra.Command {
 		&logFile, "log-file", "",
 		"Path to log file (defaults to stderr)",
 	)
-	// Default to read-write mode for personal use; use --read-only to restrict to read operations.
+	// Default to read-only mode for safety; use --read-only=false to allow write operations.
 	cmd.PersistentFlags().BoolVar(
-		&readOnly, "read-only", false,
+		&readOnly, "read-only", true,
 		"Restrict the server to read-only operations",
 	)
 
