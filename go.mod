@@ -39,3 +39,5 @@ require (
 // TODO: upgrade golang.org/x/exp - the pinned version is from Sept 2023, worth checking if anything changed
 // NOTE: golang.org/x/exp is only needed transitively via sagikazarmark/slog-shim; once Go 1.22 slog
 //       is used directly throughout, this indirect dep should drop away entirely
+// NOTE: mark3labs/mcp-go v0.8.0 is the version upstream uses; v0.9.x introduced breaking tool-option
+//       API changes - keep an eye on upstream to see if/when they migrate before pulling it in here
