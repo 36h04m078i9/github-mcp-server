@@ -43,3 +43,5 @@ require (
 //       API changes - keep an eye on upstream to see if/when they migrate before pulling it in here
 // NOTE: shurcooL/githubv4 is used for GraphQL queries; the pinned commit (2024-04-29) predates
 //       several schema additions - worth checking if a newer commit adds anything useful for learning
+// NOTE: considered bumping to go 1.23 to get the updated slices/maps stdlib packages, but staying
+//       on 1.22 to stay in sync with upstream and avoid any subtle toolchain behaviour differences
