@@ -41,3 +41,5 @@ require (
 //       is used directly throughout, this indirect dep should drop away entirely
 // NOTE: mark3labs/mcp-go v0.8.0 is the version upstream uses; v0.9.x introduced breaking tool-option
 //       API changes - keep an eye on upstream to see if/when they migrate before pulling it in here
+// NOTE: shurcooL/githubv4 is used for GraphQL queries; the pinned commit (2024-04-29) predates
+//       several schema additions - worth checking if a newer commit adds anything useful for learning
