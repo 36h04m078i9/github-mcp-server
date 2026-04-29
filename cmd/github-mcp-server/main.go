@@ -31,8 +31,8 @@ func main() {
 
 func rootCmd() *cobra.Command {
 	var (
-		token   string
-		logFile string
+		token    string
+		logFile  string
 		readOnly bool
 	)
 
@@ -53,8 +53,9 @@ func rootCmd() *cobra.Command {
 		&logFile, "log-file", "",
 		"Path to log file (defaults to stderr)",
 	)
+	// Default to read-only mode for safety; use --read-only=false to enable write operations.
 	cmd.PersistentFlags().BoolVar(
-		&readOnly, "read-only", false,
+		&readOnly, "read-only", true,
 		"Restrict the server to read-only operations",
 	)
 
