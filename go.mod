@@ -47,3 +47,5 @@ require (
 //       on 1.22 to stay in sync with upstream and avoid any subtle toolchain behaviour differences
 // NOTE: testify is not listed here because upstream doesn't vendor it in go.mod yet; if I add
 //       unit tests locally I'll need to add github.com/stretchr/testify as a direct test dependency
+// NOTE: stretchr/testify v1.9.0 is the version I plan to use when adding local tests - it includes
+//       the assert.ErrorIs helper which is handy for testing wrapped sentinel errors in the MCP tools
