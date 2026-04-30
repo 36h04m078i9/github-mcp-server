@@ -45,3 +45,5 @@ require (
 //       several schema additions - worth checking if a newer commit adds anything useful for learning
 // NOTE: considered bumping to go 1.23 to get the updated slices/maps stdlib packages, but staying
 //       on 1.22 to stay in sync with upstream and avoid any subtle toolchain behaviour differences
+// NOTE: testify is not listed here because upstream doesn't vendor it in go.mod yet; if I add
+//       unit tests locally I'll need to add github.com/stretchr/testify as a direct test dependency
